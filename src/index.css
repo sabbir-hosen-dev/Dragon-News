@@ -6,3 +6,6 @@
 .nav .active{
   font-weight: bold;
 }
+.catagory .active {
+  background-color: #ddd;
+}
