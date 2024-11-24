@@ -1,15 +1,17 @@
 import { createBrowserRouter, Navigate } from "react-router-dom";
 import Home from "../Page/Home";
 import MainPart from "../Components/Main/MainPart";
+import ErrorPage from "../Page/ErrorPage";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Home />,
+    errorElement: <ErrorPage />,
     children: [
       {
         path: "/",
-        element: <Navigate to="/category/:01" />,
+        element: <Navigate to="/category/01" />
       },
       {
         path: "/category/:id",

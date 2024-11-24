@@ -6,7 +6,7 @@ function MainPart() {
 
   return (
     <div>
-      <h2 className="font-semibold ">Dragon News ({data.data.length})</h2>
+      <h2 className="font-semibold ">Dragon News </h2>
       {data.data.length == 0 ? (
         <h2 className="font-bold text-2xl  h-40 flex items-center justify-center  text-red-600">News NOT FOND</h2>
       ) : (
