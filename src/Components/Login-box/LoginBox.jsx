@@ -1,9 +1,11 @@
 import { AiFillGithub } from "react-icons/ai"; 
 import { FcGoogle } from "react-icons/fc";
-import { signInWithGoogle } from "../../Firebase/Auth";
+import useAuthContext from './../../Hook/useAuthContext';
+
 
 function LoginBox() {
 
+  const {signInWithGoogle} = useAuthContext()
   return (
     <div>
       <h2 className="font-bold text-xl mb-3">Login With</h2>
